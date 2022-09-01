@@ -1,0 +1,27 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+
+.done-true {
+  color: green;
+}
+.form{
+  margin-top: 14px;
+}
+ 
+.list {
+  margin-top: 4px;
+  border: 0.1em solid lightblue;
+}
+
+
+
+.menu > li {
+  display: inline;
+}

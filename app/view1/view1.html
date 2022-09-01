@@ -1,0 +1,18 @@
+<div ng-controller="View1Ctrl as todoList">
+    <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+    <input class="btn-primary" ng-click="todoList.archive()" type="submit" value="Remove">
+    <div class="list">
+        <ul>
+            <li ng-repeat="todo in todoList.todos">
+              <input type="checkbox" ng-model="todo.done">
+              <span class="done-{{todo.done}}">{{todo.text}}</span>
+            </li>
+          </ul>
+    </div>
+   
+    <form class="form" ng-submit="todoList.addTodo()">
+      <input type="text" ng-model="todoList.todoText"  size="30"
+             placeholder="Add new todo here">
+      <input class="btn-primary" type="submit" value="Add">
+    </form>
+  </div>
